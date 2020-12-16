@@ -39,21 +39,17 @@ spring:
 
 mysql:
   datasource:
-    url: jdbc:mysql://106.13.98.6:3306/running?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull
+    url: jdbc:mysql://127.0.0.1:3306/running?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull
     username: root
-    password: 1qaz2wsx
+    password: root
     driverClassName: com.mysql.jdbc.Driver
 oracle:
   datasource:
-    #url: jdbc:oracle:thin:@127.0.0.1:1521/kefudb
+    #url: jdbc:oracle:thin:@127.0.0.1:1521/running
     #username: root
     #password: root
     #driverClassName: oracle.jdbc.driver.OracleDriver
-    url: jdbc:mysql://116.196.125.139:3306/running?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull
+    url: jdbc:mysql://127.0.0.1:3306/running?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull
     username: root
-    password: 1qaz2wsx
+    password: root
     driverClassName: com.mysql.jdbc.Driver
-
-#业务配置
-business:
-  systemStartTime: 2020-01-01

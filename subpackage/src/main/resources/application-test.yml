@@ -38,12 +38,16 @@ spring:
       connect-properties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
 
     master:
-      jdbc-url: jdbc:mysql://106.13.98.6:3306/running?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull
+      jdbc-url: jdbc:mysql://127.0.0.1:3306/running?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull
       username: root
-      password: 1qaz2wsx
+      password: root
       driver-class-name: com.mysql.jdbc.Driver
     slave:
-      jdbc-url: jdbc:mysql://116.196.125.139:3306/running?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull
+      #jdbc-url: jdbc:oracle:thin:@127.0.0.1:1521/running
+      #username: root
+      #password: root
+      #driver-class-name: oracle.jdbc.driver.OracleDriver
+      jdbc-url: jdbc:mysql://127.0.0.1:3306/running?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull
       username: root
       password: root
       driver-class-name: com.mysql.jdbc.Driver
