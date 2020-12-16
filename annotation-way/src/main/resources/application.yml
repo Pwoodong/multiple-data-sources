@@ -1,0 +1,20 @@
+server:
+  port: 9001
+  servlet:
+    context-path: /annotation-way-demo
+  session-timeout: 1800
+
+spring:
+  jackson:
+    time-zone: GMT+8
+    date-format: yyyy-MM-dd HH:mm:ss
+  profiles: 
+    active: dev
+  devtools:
+    restart:
+      enabled: true
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+  mapper-locations: mybatis/**/*Mapper.xml
+  typeAliasesPackage: com.jiu.**.entity
